@@ -15,6 +15,8 @@ console.log('il tuo numero: ' + userNumber);
 
 let randomNumber = randomNumberGenerator(1, 5);
 
+console.log('Il mio numero è: ' + randomNumber)
+
 // SOMMA DI DUE NUMERI
 
 let somma = userNumber + randomNumber;
