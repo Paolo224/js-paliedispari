@@ -1,14 +1,28 @@
 
-const userPariDispari = parseInt(prompt('Pari o dispari?'), 10);
-const userNumber = prompt('scegli un numero da 1 a 5!');
+const userPariDispari = prompt('pari o dispari?');
+const userNumber = parseInt(prompt('Scegli un numero da 1 a 5'), 10);
+
+console.log('Hai scelto: ' + userPariDispari);
+console.log('il tuo numero: ' + userNumber);
 
 let randomNumber = randomNumberGenerator(1, 5);
 
 // SOMMA DI DUE NUMERI
+
 let somma = userNumber + randomNumber;
 console.log(somma);
+
 // STABILIRE SE LA SOMMA è PARI O DISPARI CON FUNZIONE
+
+let pari_dispari = HowIsTheNumber(somma);
+
 // STABILIRE IL VINCITORE
+
+if(userPariDispari === pari_dispari){
+    console.log('HAI VINTO');
+} else{
+    console.log('NON HAI VINTO')
+}
 
 
 
@@ -33,4 +47,13 @@ console.log(somma);
 function randomNumberGenerator (Min, Max){
     const randomNumber = Math.floor(Math.random() * (Max - Min + 1) + Min );
     return randomNumber;
+}
+
+function HowIsTheNumber (value){
+    if(value % 2 === 0){
+        return 'pari';
+    } else{
+        return 'dispari';
+    }
+    
 }
