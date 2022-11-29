@@ -1,6 +1,6 @@
 let userPariDispari = 0;
 
-while( (userPariDispari != 'pari') || (userPariDispari != 'dispari')){
+while( (userPariDispari != 'pari') && (userPariDispari != 'dispari')){
     userPariDispari = prompt('pari o dispari?');
 }
 
