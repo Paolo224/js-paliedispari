@@ -1,6 +1,14 @@
+let userPariDispari = 0;
 
-const userPariDispari = prompt('pari o dispari?');
-const userNumber = parseInt(prompt('Scegli un numero da 1 a 5'), 10);
+while( (userPariDispari != 'pari') || (userPariDispari != 'dispari')){
+    userPariDispari = prompt('pari o dispari?');
+}
+
+let userNumber = 0;
+
+while( (userNumber < 1) || (userNumber > 5)){
+    userNumber = parseInt(prompt('Scegli un numero da 1 a 5'), 10);
+}
 
 console.log('Hai scelto: ' + userPariDispari);
 console.log('il tuo numero: ' + userNumber);
@@ -23,20 +31,6 @@ if(userPariDispari === pari_dispari){
 } else{
     console.log('NON HAI VINTO')
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
